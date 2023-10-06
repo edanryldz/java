@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo-2.jpg" alt="">
+            
+        </div>
+        <div class="navbar">
+            <a href="index.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="To do.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>To do</h3>
+            </a>
+            <a href="timer.html" class="active">
+                <span class="material-icons-sharp">password</span>
+                <h3>Timer</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+    </header>
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+         @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  letter-spacing: 5px;
+}
+.container {
+  border-radius: 6rem;
+  padding-top: 15rem;
+  
+  width: 40%;
+  height: 20%;
+  margin: 5rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+form {
+  display: flex;
+  justify-content: center
+;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+#secilen-dk,
+#secilen-sn {
+   background-color: rgb(255, 172, 127);
+   border-radius: 5rem;
+   color: coral;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+#baslat,
+#sıfırla {
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  background: rgb(115, 184, 63);
+  border-radius: 10px;
+}
+#baslat:hover {
+  background: rgb(81, 176, 90);
+}
+#sıfırla {
+  background: rgb(226, 122, 43);
+}
+#sıfırla:hover {
+  background: rgb(226, 141, 76);
+}
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h1><span id="dakika">00</span>:<span id="saniye">00</span></h1>
+          <form>
+            <label>
+              Dakika
+              <input id="secilen-dk" type="number" min="0" max="59" value="00" />
+            </label>
+            <label>
+              Saniye
+              <input id="secilen-sn" type="number" min="0" max="59" value="00" />
+            </label>
+          </form>
+          <button id="baslat">Başlat</button>
+          <button id="sıfırla">Sıfırla</button>
+        </div>
+        <script src="app.js"></script>
+      </body>
+    </html>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
